@@ -49,7 +49,17 @@
                   </ul>
                 </div>
               </div>
-              
+              <a href="#" class="search-toggle">
+                <i class="fa fa-search"></i>
+             </a>
+            <div class="search-box iq-search-bar">
+              <form action="#" class="searchbox">
+               <div class="form-group position-relative">
+                  <input type="text" id="find" class="text search-input font-size-12" placeholder="type here to search..." onkeyup="search()" />
+                  <i class="search-link fa fa-search"></i>
+               </div>
+              </form>
+            </div>
             </nav>
             <div class="nav-overlay"></div>
           </div>
@@ -424,6 +434,25 @@
   <script src="js/slick-animation.min.js"></script>
 
   <script src="main.js"></script>
+
+  <script type="text/javascript">
+    function search() {
+    let filter = document.getElementById('find').value.toUpperCase();
+    let item = document.querySelectorAll('.slide-item');
+    let l = document.getElementsByTagName('h6');
+    for(var i = 0;i<=l.length;i++){
+    let a=item[i].getElementsByTagName('h6')[0];
+    let value=a.innerHTML || a.innerText || a.textContent;
+    if(value.toUpperCase().indexOf(filter) > -1) {
+    item[i].style.display="";
+    }
+    else
+    {
+    item[i].style.display="none";
+    }
+    }
+    }
+    </script>
 </body>
 
 </html>
