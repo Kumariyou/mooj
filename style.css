@@ -757,7 +757,11 @@ header#main-header.menu-sticky{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+<<<<<<< Updated upstream
     -webkit-line-clamp: 1;
+=======
+    -webkit-line-clamp: 2;
+>>>>>>> Stashed changes
     -webkit-box-orient: vertical;
 }
 
