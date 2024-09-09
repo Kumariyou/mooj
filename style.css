@@ -778,7 +778,10 @@ header#main-header.menu-sticky{
     background-image: url(images/slider/Screenshot\ 2024-02-11\ 210518.png);
 }
 #home-slider .slick-bg.s-bg-3{
-    background-image: url(images/slider/slider3.jpg);
+    background-image: url(images/slider/Screenshot\ 2024-09-08\ 223520.png);
+}
+#home-slider .slick-bg.s-bg-4{
+    background-image: url(images/slider/Screenshot\ 2024-09-08\ 225511.png);
 }
 
 .slick-bg::before{
